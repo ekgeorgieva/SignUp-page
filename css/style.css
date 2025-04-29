@@ -1,0 +1,259 @@
+*{box-sizing: border-box;}
+body{
+    height: 573px;
+    background: linear-gradient(to right,rgb(78, 75, 75), rgb(90, 44, 44));
+    font-family: sans-serif;
+}
+.square{
+    width: 32%;
+    height: 470px;
+    margin-top: 2%;
+    margin-left: 22%;
+    float: left;
+    /* border-radius: 10px; */
+    background-color: rgba(35, 29, 29, 0.866);
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+body > div.photo > img{
+    width: 32%;
+    height: 470px;
+    float:left;
+    margin-top: 2%;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    /* border-radius: 10px; */
+}
+h2{
+    margin: 35px 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.square .Username {
+    position: relative;
+}
+.square .Username input {
+    width: 85%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    margin-left: 25px; 
+    padding-left: 36px;
+    border-radius: 10px;
+    border: 1px solid rgb(133, 80, 80);
+    outline: none;
+    background: transparent;
+}
+body > div.square > div.Username > i{
+    position: absolute;
+    top: 0;
+    left: 32px;
+    height: 48px;
+    font-size: 24px;
+    line-height: 48px;
+    text-align: left;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+    color: white;
+}
+.square .Username label {
+    position: absolute;
+    left: 0;
+    padding: 16px 62px;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+.square .Username input:valid ~ label {
+    top: -32px;
+    left: 0;
+    color: #785f5f;
+    font-size: 12px;
+}
+input {
+    font: small-caption;
+    font-size: 16px;
+}
+button{
+    width: 95px;
+    height: 40px;
+    color: rgb(133, 80, 80);
+    margin-left: 165px;
+    font-size: 20px;
+    font-family: sans-serif;
+    border-radius: 7px;
+}
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(41, 34, 34, 0.984), 0 10px 50px 0 rgba(166, 65, 65, 0.993);
+    background-color: rgb(79, 48, 48);
+    color: white;
+    border-color: white;
+}
+.Forget{
+    margin-left: 160px;
+    margin-top: 10px;
+}
+body > div > div.Forget > a{
+    color: rgb(244, 242, 242);
+    font-size: 14px;
+}
+/* email */
+.square .email {
+    position: relative;
+}
+.square .email input {
+    width: 85%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    margin-left: 25px; 
+    padding-left: 36px;
+    border-radius: 10px;
+    border: 1px solid rgb(133, 80, 80);
+    outline: none;
+    background: transparent;
+}
+body > div.square > div.email > i{
+    position: absolute;
+    top: 0;
+    left: 32px;
+    height: 48px;
+    font-size: 24px;
+    line-height: 48px;
+    text-align: left;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+    color: white;
+    float: left;
+}
+.square .email label{
+    position: absolute;
+    left: 0;
+    padding: 16px 62px;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+    float: left;
+}
+.square .email input:valid ~ label {
+    top: -32px;
+    left: 0;
+    color: #785f5f;
+    font-size: 12px;
+}
+/* Confirm Pass */
+.square .ConfirmPas {
+    position: relative;
+}
+.square .ConfirmPas input {
+    width: 85%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    margin-left: 25px; 
+    padding-left: 36px;
+    border-radius: 10px;
+    border: 1px solid rgb(133, 80, 80);
+    outline: none;
+    background: transparent;
+}
+body > div.square > div.ConfirmPas > i{
+    position: absolute;
+    top: 0;
+    left: 32px;
+    height: 48px;
+    font-size: 24px;
+    line-height: 48px;
+    text-align: left;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+    color: white;
+    float: left;
+}
+.square .ConfirmPas label{
+    position: absolute;
+    left: 0;
+    padding: 16px 62px;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+    float: left;
+}
+.square .ConfirmPas input:valid ~ label {
+    top: -32px;
+    left: 0;
+    color: #785f5f;
+    font-size: 12px;
+}
+/* Password */
+.square .Password {
+    position: relative;
+}
+.square .Password input {
+    width: 85%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    margin-left: 25px; 
+    padding-left: 36px;
+    border-radius: 10px;
+    border: 1px solid rgb(133, 80, 80);
+    outline: none;
+    background: transparent;
+}
+body > div.square > div.Password > i{
+    position: absolute;
+    top: 0;
+    left: 32px;
+    height: 48px;
+    font-size: 24px;
+    line-height: 48px;
+    text-align: left;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+    color: white;
+    float: left;
+}
+.square .Password label{
+    position: absolute;
+    left: 0;
+    padding: 16px 62px;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+    float: left;
+}
+.square .Password input:valid ~ label {
+    top: -32px;
+    left: 0;
+    color: #785f5f;
+    font-size: 12px;
+}
+.di{
+    height: 40px;
+    padding-top: 15px;
+}
+/* body > div.di > div > a{
+    width: 50px;
+    height: 20px;
+    margin-left: 10px;
+    padding-top: 10px;
+} */
+body > div.di > div > button{
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    background-image: url(../photos/arrow_back_ios_FILL0_wght400_GRAD0_opsz24.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 10px 5px;
+    
+}
