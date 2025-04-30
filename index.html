@@ -1,52 +1,73 @@
-<!Doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <title>SignUp</title>
         <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div class="container">
             <div class="di">
                 <div class="back">
-                <!-- <a href="#" class="btn mt-4">back</a> -->
-                <button type="submit" formaction="/"></button>
+                    <button type="button" onclick="history.back()">
+                        <i class="material-icons">arrow_back</i>
+                    </button>
                 </div>
             </div>
             <div class="square">
                 <div class="login">
-                    <h2>Sign Up</h2>
+                    <h2>Create Account</h2>
+                    <p class="welcome-text">Welcome! Please fill in your details</p>
                 </div>
-                <div class="Username">
-                    <input type="text" name="" required="">
-                    <label>Username</label>
-                    <i class="material-icons">person</i>
-                </div>
-                <div class="email">
-                    <input type="text" name="" required="">
-                    <label>E-mail</label>
-                    <i class="material-icons">mail</i>
-                </div>
-                <div class="Password">
-                    <input type="password" name="" required="">
-                    <label>Password</label>
-                    <i class="material-icons">lock</i>
-                </div>
-                <div class="ConfirmPas">
-                    <input type="password" name="" required="">
-                    <label>Confirm Password</label>
-                    <i class="material-icons">lock</i>
-                </div>
-                <div class="Sub">
-                    <button type="button">Sign Up</button>
-                </div>
+                <form class="signup-form" onsubmit="return validateForm(event)">
+                    <div class="Username">
+                        <input type="text" id="username" required>
+                        <label>Username</label>
+                        <i class="material-icons">person</i>
+                    </div>
+                    <div class="email">
+                        <input type="email" id="email" required>
+                        <label>E-mail</label>
+                        <i class="material-icons">mail</i>
+                    </div>
+                    <div class="Password">
+                        <input type="password" id="password" required>
+                        <label>Password</label>
+                        <i class="material-icons">lock</i>
+                        <i class="material-icons toggle-password">visibility_off</i>
+                    </div>
+                    <div class="ConfirmPas">
+                        <input type="password" id="confirm-password" required>
+                        <label>Confirm Password</label>
+                        <i class="material-icons">lock</i>
+                        <i class="material-icons toggle-password">visibility_off</i>
+                    </div>
+                    <div class="terms">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">I agree to the Terms & Conditions</label>
+                    </div>
+                    <div class="Sub">
+                        <button type="submit" class="signup-btn">
+                            <span>Sign Up</span>
+                            <i class="material-icons">arrow_forward</i>
+                        </button>
+                    </div>
+                </form>
                 <div class="Forget">
-                    <a href="#" class="btn mt-4">Forget password</a>
+                    <p>Already have an account? <a href="#" class="login-link">Login here</a></p>
                 </div>
             </div>
             <div class="photo">
-                <img src="photos/pexels-super-cute-14277864.jpg" />
+                <img src="photos/pexels-super-cute-14277864.jpg" alt="Welcome Image"/>
+                <div class="photo-overlay">
+                    <h3>Join Our Community</h3>
+                    <p>Start your journey with us today!</p>
+                </div>
             </div>
-            
+        </div>
+        <script src="script.js"></script>
     </body>
 </html>
